@@ -1,0 +1,11 @@
+<div data-role="view" data-title="Battery" data-layout="main" data-model="app.dataListView" data-show="app.dataListView.onShow">
+
+    <ul data-role="listview" data-style="inset" data-template="dataListViewModelTemplate" data-bind="{ source: dataListViewModel.dataSource}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+    <script type="text/x-kendo-template" id="dataListViewModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Charge'] #</h3>
+            <p>#: data['Voltage'] #</p>
+        </div>
+    </script>
+</div>
