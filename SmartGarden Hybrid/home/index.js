@@ -25,6 +25,9 @@ app.home = kendo.observable({
                     }
                 }
             },
+            serverSorting: true,
+            serverPaging: true,
+            pageSize: 50
         },
         dataSource = new kendo.data.DataSource(dataSourceOptions),
         homeModel = kendo.observable({

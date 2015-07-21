@@ -12,12 +12,13 @@
           "iconField": true,
           "headerField": "AirTemperature",
           "subHeaderField": "AirTemperature",
+          "group": "AirTemperature",
           "masterDetails": true,
           "detailHeaderField": "AirTemperature",
           "detailSubHeaderField": "Humidity",
           "detailDescriptionField": "Pressure",
           "pullToRefresh": true,
-          "endlessScroll": false
+          "endlessScroll": true
         }
       ],
       "name": "home",
@@ -35,9 +36,10 @@
           "collection": "BatteryState",
           "headerField": "Charge",
           "subHeaderField": "Voltage",
+          "group": "Charge",
           "masterDetails": false,
-          "pullToRefresh": false,
-          "endlessScroll": false
+          "pullToRefresh": true,
+          "endlessScroll": true
         }
       ],
       "name": "dataListView",
@@ -58,8 +60,7 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
   "skin": "flat"
 }

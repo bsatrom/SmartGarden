@@ -23,17 +23,11 @@
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             </div>
         </header>
 
         <!-- application views will be rendered here -->
-
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="home/view.html" data-icon="home">Readings</a>
-                <a href="dataListView/view.html" data-icon="recents">Battery</a>
-            </div>
-        </footer>
     </div>
 
     <div data-role="layout" data-id="main-nonav">
@@ -44,9 +38,20 @@
         </header>
 
         <!-- application views will be rendered here -->
+    </div>
 
-        <footer data-role="footer">
-        </footer>
+    <div id="appDrawer" data-role="drawer" data-title="Navigation">
+        <header data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <ul id="navigation-container" data-role="listview">
+            <li><a href="home/view.html" data-icon="home">Readings</a>
+            </li>
+            <li><a href="dataListView/view.html" data-icon="recents">Battery</a>
+            </li>
+        </ul>
     </div>
     <script src="home/index.js"></script>
     <script src="dataListView/index.js"></script>
